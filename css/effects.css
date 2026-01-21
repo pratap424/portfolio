@@ -1,0 +1,444 @@
+/* ========================================
+   TERMINAL & GLITCH EFFECTS - Unique Portfolio
+   ======================================== */
+
+/* Terminal Style Hero */
+.hero-text {
+    position: relative;
+}
+
+/* Glitch effect on name */
+.glitch {
+    position: relative;
+    animation: glitch-skew 4s infinite linear alternate-reverse;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--accent-primary);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--accent-secondary);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim2 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+        transform: skew(0.5deg);
+    }
+
+    5% {
+        clip: rect(70px, 9999px, 78px, 0);
+        transform: skew(0.5deg);
+    }
+
+    10% {
+        clip: rect(10px, 9999px, 63px, 0);
+        transform: skew(0.4deg);
+    }
+
+    15% {
+        clip: rect(45px, 9999px, 22px, 0);
+        transform: skew(0.6deg);
+    }
+
+    20% {
+        clip: rect(76px, 9999px, 19px, 0);
+        transform: skew(0.3deg);
+    }
+
+    25% {
+        clip: rect(59px, 9999px, 15px, 0);
+        transform: skew(0.8deg);
+    }
+
+    30% {
+        clip: rect(51px, 9999px, 47px, 0);
+        transform: skew(0.2deg);
+    }
+
+    35% {
+        clip: rect(90px, 9999px, 3px, 0);
+        transform: skew(0.4deg);
+    }
+
+    40% {
+        clip: rect(28px, 9999px, 25px, 0);
+        transform: skew(0.8deg);
+    }
+
+    45% {
+        clip: rect(91px, 9999px, 61px, 0);
+        transform: skew(0.1deg);
+    }
+
+    50% {
+        clip: rect(19px, 9999px, 49px, 0);
+        transform: skew(0.3deg);
+    }
+
+    55% {
+        clip: rect(47px, 9999px, 75px, 0);
+        transform: skew(0.5deg);
+    }
+
+    60% {
+        clip: rect(69px, 9999px, 64px, 0);
+        transform: skew(0.7deg);
+    }
+
+    65% {
+        clip: rect(78px, 9999px, 19px, 0);
+        transform: skew(0.2deg);
+    }
+
+    70% {
+        clip: rect(12px, 9999px, 80px, 0);
+        transform: skew(0.9deg);
+    }
+
+    75% {
+        clip: rect(55px, 9999px, 53px, 0);
+        transform: skew(0.3deg);
+    }
+
+    80% {
+        clip: rect(26px, 9999px, 90px, 0);
+        transform: skew(0.6deg);
+    }
+
+    85% {
+        clip: rect(64px, 9999px, 9px, 0);
+        transform: skew(0.1deg);
+    }
+
+    90% {
+        clip: rect(38px, 9999px, 41px, 0);
+        transform: skew(0.5deg);
+    }
+
+    95% {
+        clip: rect(81px, 9999px, 32px, 0);
+        transform: skew(0.7deg);
+    }
+
+    100% {
+        clip: rect(24px, 9999px, 86px, 0);
+        transform: skew(0.4deg);
+    }
+}
+
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(65px, 9999px, 99px, 0);
+        transform: skew(0.4deg);
+    }
+
+    5% {
+        clip: rect(52px, 9999px, 31px, 0);
+        transform: skew(0.3deg);
+    }
+
+    10% {
+        clip: rect(75px, 9999px, 55px, 0);
+        transform: skew(0.8deg);
+    }
+
+    15% {
+        clip: rect(11px, 9999px, 28px, 0);
+        transform: skew(0.2deg);
+    }
+
+    20% {
+        clip: rect(98px, 9999px, 12px, 0);
+        transform: skew(0.6deg);
+    }
+
+    25% {
+        clip: rect(33px, 9999px, 89px, 0);
+        transform: skew(0.4deg);
+    }
+
+    30% {
+        clip: rect(88px, 9999px, 47px, 0);
+        transform: skew(0.1deg);
+    }
+
+    35% {
+        clip: rect(15px, 9999px, 64px, 0);
+        transform: skew(0.7deg);
+    }
+
+    40% {
+        clip: rect(72px, 9999px, 36px, 0);
+        transform: skew(0.5deg);
+    }
+
+    45% {
+        clip: rect(27px, 9999px, 83px, 0);
+        transform: skew(0.3deg);
+    }
+
+    50% {
+        clip: rect(61px, 9999px, 21px, 0);
+        transform: skew(0.9deg);
+    }
+
+    55% {
+        clip: rect(43px, 9999px, 77px, 0);
+        transform: skew(0.2deg);
+    }
+
+    60% {
+        clip: rect(96px, 9999px, 42px, 0);
+        transform: skew(0.6deg);
+    }
+
+    65% {
+        clip: rect(18px, 9999px, 58px, 0);
+        transform: skew(0.4deg);
+    }
+
+    70% {
+        clip: rect(84px, 9999px, 14px, 0);
+        transform: skew(0.8deg);
+    }
+
+    75% {
+        clip: rect(39px, 9999px, 93px, 0);
+        transform: skew(0.1deg);
+    }
+
+    80% {
+        clip: rect(57px, 9999px, 29px, 0);
+        transform: skew(0.5deg);
+    }
+
+    85% {
+        clip: rect(22px, 9999px, 71px, 0);
+        transform: skew(0.3deg);
+    }
+
+    90% {
+        clip: rect(79px, 9999px, 45px, 0);
+        transform: skew(0.7deg);
+    }
+
+    95% {
+        clip: rect(35px, 9999px, 67px, 0);
+        transform: skew(0.2deg);
+    }
+
+    100% {
+        clip: rect(91px, 9999px, 16px, 0);
+        transform: skew(0.6deg);
+    }
+}
+
+@keyframes glitch-skew {
+    0% {
+        transform: skew(0deg);
+    }
+
+    20% {
+        transform: skew(0deg);
+    }
+
+    21% {
+        transform: skew(1deg);
+    }
+
+    22% {
+        transform: skew(-1deg);
+    }
+
+    23% {
+        transform: skew(0deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+/* Terminal Command Line */
+.terminal-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    margin-bottom: var(--space-md);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.terminal-line::before {
+    content: '>';
+    color: var(--accent-secondary);
+    font-weight: bold;
+}
+
+.terminal-line .command {
+    color: var(--text-primary);
+}
+
+/* Scanline Effect */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.05) 0px,
+            rgba(0, 0, 0, 0.05) 1px,
+            transparent 1px,
+            transparent 2px);
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/* Code Block Aesthetic for Skills */
+.skill-tag {
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+}
+
+.skill-tag::before {
+    content: '<';
+    opacity: 0.5;
+    margin-right: 2px;
+}
+
+.skill-tag::after {
+    content: '/>';
+    opacity: 0.5;
+    margin-left: 2px;
+}
+
+/* Hover glow effect */
+.project-card:hover {
+    box-shadow:
+        0 0 20px rgba(var(--accent-primary-rgb), 0.3),
+        0 0 40px rgba(var(--accent-primary-rgb), 0.1);
+}
+
+/* Matrix-like background lines */
+.hero-visual::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image:
+        linear-gradient(var(--accent-primary) 1px, transparent 1px),
+        linear-gradient(90deg, var(--accent-primary) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.03;
+    animation: grid-move 20s linear infinite;
+}
+
+@keyframes grid-move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+/* Cyber border effect */
+.highlight-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+    animation: cyber-line 3s infinite;
+}
+
+@keyframes cyber-line {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* Typewriter cursor */
+.typing-cursor {
+    animation: blink 0.7s infinite;
+    color: var(--accent-primary);
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Enhanced floating badges with glow */
+.float-badge {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(var(--accent-primary-rgb), 0.3);
+    box-shadow:
+        0 0 15px rgba(var(--accent-primary-rgb), 0.2),
+        inset 0 0 15px rgba(var(--accent-primary-rgb), 0.05);
+}
+
+/* Terminal output style for description */
+.hero-description {
+    border-left: 3px solid var(--accent-primary);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.hero-description::before {
+    content: '// output:';
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    position: absolute;
+    top: -1.5rem;
+    left: var(--space-md);
+}
